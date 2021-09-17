@@ -19,6 +19,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <div>
+          Hi My name is Boni I am the founder of Boni's Garage.
+        </div>
+      </main>
     </div>
   );
 }
