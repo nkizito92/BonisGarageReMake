@@ -1,5 +1,64 @@
 .nav {
     width: 100%;
-    padding: 0 20px;
+    padding: 20px 0;
     background-color: blue;
 }
+
+.imageSlide {
+    position: relative;
+    margin: 0 auto;
+    background-image: url(../images/20210908_155301.jpg);
+    background-size: 100% 100%;
+    width: 80%;
+    height: 480px;
+  
+}
+.imageSlide ul li{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: 480px;
+    animation: blk 40s linear infinite;
+    transition: 2s linear;
+    list-style: none;
+}
+.imageSlide ul li:nth-child(1) {
+    background-image: url(../images/20210908_155301.jpg);
+    background-size: 100% 100%;
+}
+.imageSlide ul li:nth-child(2) {
+    background-image: url(../images/20180420_092650.jpg);
+    background-size: 100% 100%;
+    animation-delay: 10s;
+}
+.imageSlide ul li:nth-child(3) {
+    background-image: url(../images/20180420_092811.jpg);
+    background-size: 100% 100%;
+    animation-delay: 20s;
+}
+.imageSlide ul li:nth-child(4) {
+    background-image: url(../images/20180420_094930.jpg);
+    background-size: 100% 100%;
+    animation-delay: 30s;
+}
+
+@keyframes blk {
+    0% {
+      opacity: 0;
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+  }
